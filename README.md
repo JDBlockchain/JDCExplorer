@@ -2,7 +2,7 @@
 
 <img src="public/img/explorer-logo.png" alt="JDC Explorer logo" height="200" />
 
-<b>Live Version: [etherhub.io](http://etherhub.io)</b>
+<b>Live Version: (http://39.100.246.152:3000/home)</b>
 
 Follow the project progress at: [JDC Block Explorer Development](https://github.com/JDBlockchain/JDCExplorer)
 
