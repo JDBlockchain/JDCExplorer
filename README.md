@@ -1,10 +1,10 @@
-# ETC Explorer
+# JDC Explorer
 
-<img src="public/img/explorer-logo.png" alt="ETC Explorer logo" height="200" />
+<img src="public/img/explorer-logo.png" alt="JDC Explorer logo" height="200" />
 
 <b>Live Version: [etherhub.io](http://etherhub.io)</b>
 
-Follow the project progress at: [ETC Block Explorer Development](https://github.com/ethereumclassic/explorer)
+Follow the project progress at: [JDC Block Explorer Development](https://github.com/JDBlockchain/JDCExplorer)
 
 ## Requirements
 
@@ -16,10 +16,10 @@ Follow the project progress at: [ETC Block Explorer Development](https://github.
 ## Build and Run
 
   1. Clone the repository.
-  `git clone https://github.com/ethereumclassic/explorer`
+  `git clone https://github.com/JDBlockchain/JDCExplorer`
 
   2. Go to the explorer subdirectory.
-  `cd explorer`
+  `cd JDCExplorer`
 
   3. Set up default configurations.
   `cp config.example.json config.json`
@@ -47,18 +47,18 @@ Follow the project progress at: [ETC Block Explorer Development](https://github.
     "bulkSize":     100,
     "useRichList": true,
     "settings": {
-        "symbol": "ETC",
-        "name": "Ethereum Classic",
-        "title": "Ethereum Classic Block Explorer",
-        "rss": "https://ethereumclassic.org",
-        "reddit": "https://www.reddit.com/r/EthereumClassic",
+        "symbol": "JDC",
+        "name": "JDC",
+        "title": "JDC Explorer",
+        "rss": "https://jdblockchain.org",
+        "reddit": "https://www.reddit.com/r/JDBlockchain",
         "twitter": "https://twitter.com/eth_classic",
-        "linkedin": "https://www.linkedin.com/company/ethereum-classic",
-        "github": "https://github.com/ethereumclassic",
-        "github-repo": "https://github.com/ethereumclassic/explorer",
+        "linkedin": "https://www.linkedin.com/company/jdblockchain",
+        "github": "https://github.com/JDBlockchain",
+        "github-repo": "https://github.com/JDBlockchain/JDCExplorer",
         "logo": "/img/explorer-logo.png",
         "customCss": "green-haze.min.css",
-        "copyright": "2019 &copy; Ethereum Classic.",
+        "copyright": "2019 &copy; JDBlockchain.",
         "poweredbyCustom": false,
         "poweredbyEtcImage": "/img/powered-by-etcexplorer-w.png",
         "poweredbyEtc": true,
