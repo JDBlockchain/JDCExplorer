@@ -1,16 +1,17 @@
 <!-- BEGIN PRE-FOOTER -->
-<div class="page-prefooter">
+<div class="page-prefooter bg-indigo-100 bg-opacity-75">
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-        <h2>About</h2>
-        <p> {{settings.about}} </p><br>
-        <span ng-bind-html="settings.poweredbyCustom" ng-if="settings.poweredbyCustom">{{settings.poweredbyCustom}}</span>
+        <p class="text-blue-600 text-3xl font-bold">About</p>
+        <!-- <p class="text-blue-500"> {{settings.about}} </p><br> -->
+        <p class="text-blue-500"> JDTChain Blockchain Explorer </p><br>
+        <!-- <span ng-bind-html="settings.poweredbyCustom" ng-if="settings.poweredbyCustom">{{settings.poweredbyCustom}}</span>
         <p ng-if="!settings.poweredbyCustom && !settings.poweredbyEtcImage && settings.poweredbyEtc">
           Powered by <a href="{{settings.github-repo}}" target="_blank">MOAC Explorer</a>
-        </p>
+        </p> -->
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+      <!-- <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
         <h2>Follow Us On</h2>
         <ul class="social-icons">
           <li>
@@ -29,13 +30,13 @@
             <a ng-show="settings.linkedin" href="{{settings.linkedin}}" target="_blank" data-original-title="linkedin" class="linkedin"></a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
 <!-- END PRE-FOOTER -->
 <!-- BEGIN POST-FOOTER -->
 <div class="scroll-to-top">
-  <i class="icon-arrow-up-circle"></i>
+  <span class="text-blue-600 text-5xl"><i class="icon-arrow-up-circle"></i></span>
 </div>
 <!-- END POST-FOOTER -->
