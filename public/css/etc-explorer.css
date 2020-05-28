@@ -114,9 +114,6 @@ li.ng-scope {
     .container {
         margin: 0 !important;
     }
-    .page-header .page-header-top .menu-toggler {
-        margin: 33px 3px 0 0;
-    }
 }
 ::-webkit-scrollbar {
     width: 4px;

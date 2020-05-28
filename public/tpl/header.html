@@ -1,66 +1,70 @@
 <!-- BEGIN HEADER TOP -->
 <div class="page-header-top">
-  <div class="container">
+  <div class="container py-3 flex border-b border-dashed border-blue-500 border-opacity-75">
     <!-- BEGIN LOGO -->
-    <div class="page-logo">
+    <div class="flex mx-1 px-1 h-16">
       <a href="/">
-      <img ng-show="settings.logo" src="{{settings.logo}}" alt="logo" class="logo-default" />
+      <img ng-show="settings.logo" src="{{settings.logo}}" alt="logo" class="h-16 w-16" />
       </a>
     </div>
     <!-- END LOGO -->
     <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-    <a href="#" class="menu-toggler btn btn-sm green-haze btn-outline">MENU</a>
+    <!-- <a href="#" class="menu-toggler btn btn-sm green-haze btn-outline">MENU</a> -->
     <!-- END RESPONSIVE MENU TOGGLER -->
     <!-- BEGIN TOP NAVIGATION MENU -->
-    <div class="top-menu">
-      <ul class="nav navbar-nav pull-right">
-        <li class="dropdown">
-          <form name="form.searchForm" class="search-form">
-            <div class="input-group">
-              <input type="text" name="explorerSearch" class="form-control" placeholder="Search by Address / Txhash / BlockNum / BlockHash" ng-model="form.searchInput" ng-keyup="$event.keyCode == 13 ? searchQuery(form.searchInput) : null">
-              <span class="input-group-btn">
-              <a class="btn" ng-click="searchQuery(form.searchInput)">
-              <i class="icon-magnifier"></i>
-              </a>
+    <div class="flex-auto md:visible lg:visible p-1 mx-2">
+      <ul class="w-full max-w-2xl pull-right">
+        <li class="dropdown w-full">
+          <form name="form.searchForm" class="w-full flex-auto">
+            <div class="input-group flex">
+              <input type="text" name="explorerSearch" class="border border-blue-500 px-3 w-full form-control" placeholder="Search by Address / Txhash / BlockNum / BlockHash" ng-model="form.searchInput" ng-keyup="$event.keyCode == 13 ? searchQuery(form.searchInput) : null">
+              <span class="h-full">
+                <a class="btn -mb-1" ng-click="searchQuery(form.searchInput)">
+                  <i class="icon-magnifier text-blue-600 p-1 font-black text-3xl"></i>
+                </a>
               </span>
             </div>
           </form>
         </li>
       </ul>
     </div>
+    <span class="content-center">
+      <a href="#" class="visible md:invisible lg:invisible btn btn-sm bg-blue-600 btn-outline menu-toggler flex text-white h-16 self-center">MENU</a>
+    </span>
+    <!-- END HEADER INNER -->
     <!-- END TOP NAVIGATION MENU -->
   </div>
 </div>
 <!-- END HEADER TOP -->
-<!-- BEGIN HEADER MENU -->
-<div class="page-header-menu">
+<div class="page-header-menu border-b border-blue-500 border-opacity-75">
   <div class="container">
     <!-- BEGIN MEGA MENU -->
     <div class="hor-menu hor-menu-light">
-      <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="/">Home</a>
-        </li>
-        <li ng-show="settings.useRichList">
-          <a href="/accounts">Accounts</a>
-        </li>
-        <li>
-          <a href="/token">Tokens</a>
-        </li>
-        <li class="menu-dropdown classic-menu-dropdown ">
-          <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="#"> Misc
-          <i class="fa fa-angle-down"></i>
-          </a>
-          <ul class="dropdown-menu pull-left">
-            <li>
-              <a href="/contract">
-              <i class="icon-check"></i> Verify Contract </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+        <ul class="nav navbar-nav text-blue-600">
+          <li>
+            <a href="/"><span class="text-blue-600 hover:text-blue-400">Home</span></a>
+          </li>
+          <li ng-show="settings.useRichList" >
+            <a href="/accounts"><span class="text-blue-600 hover:text-blue-400">Accounts</span></a>
+          </li>
+          <li>
+            <a href="/token"><span class="text-blue-600 hover:text-blue-400">Tokens</span></a>
+          </li>
+          <li class="menu-dropdown classic-menu-dropdown">
+            <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="#"> 
+              <span class="text-blue-600 hover:text-blue-400">Misc
+              <i class="fa fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown-menu pull-left">
+              <li>
+                <a href="/contract">
+                  <span class="text-blue-600 hover:text-blue-400"><i class="icon-check"></i>Verify Contract</span> </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     <!-- END MEGA MENU -->
   </div>
 </div>
-<!-- END HEADER INNER -->
+<!-- BEGIN HEADER MENU -->

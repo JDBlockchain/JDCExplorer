@@ -145,7 +145,7 @@ module.exports.Market = mongoose.model('Market');
 module.exports.TokenTransfer = mongoose.model('TokenTransfer');
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGO_URI || 'mongodb://explorer:quorum@localhost:27017/explorerDB', {useNewUrlParser: true});
+mongoose.connect(process.env.MONGO_URI || 'mongodb://explorer:quorum@39.100.246.152:27017/explorerDB', {useNewUrlParser: true});
 
 mongoose.set('useCreateIndex', true);
 // mongoose.set('debug', true);
