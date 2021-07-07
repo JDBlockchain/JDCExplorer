@@ -37,13 +37,15 @@
         <link href="/css/layout.min.css" rel="stylesheet" type="text/css" />
         <link href="/css/etc-explorer.min.css" rel="stylesheet" type="text/css" />
         <link ng-show="<%=settings.customCss%>" href="/css/<%=settings.customCss%>" rel="stylesheet" type="text/css" />
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <!-- END THEME STYLES -->
     <!-- END HEAD -->
+    </head>
     <!-- BEGIN BODY -->
     <body ng-controller="MainController" class="page-header-fixed page-on-load" ng-class="{'page-content-white': settings.layout.pageContentWhite,'page-container-bg-solid': settings.layout.pageBodySolid}">
         <!-- BEGIN PAGE SPINNER -->
         <div ng-spinner-bar class="page-spinner-bar">
-            <img src="/img/loading.gif">
+            <img src="/img/loading2.gif" />
         </div>
         <!-- END PAGE SPINNER -->
         <!-- BEGIN HEADER -->
